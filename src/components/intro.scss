@@ -1,0 +1,108 @@
+body {
+  background: url("../../public/static/images/brett-jordan-UkavOB-antE-unsplash.jpg"); // sharpie
+  // background: url("../../public/static/images/ev-zQtmZjMdejU-unsplash.jpg"); // side of building
+  // background: url("../../public/static/images/isaac-benhesed-onLbXleIkds-unsplash.jpg"); // coffee cup
+  // background: url("../../public/static/images/isaac-quesada-0-idx4o9_2o-unsplash.jpg"); // bike
+  // background: url("../../public/static/images/jeremy-bishop-KrHNUF7rd3U-unsplash.jpg"); // road
+  // background: url("../../public/static/images/mehdi-sepehri-cX0Yxw38cx8-unsplash.jpg"); // birds
+  // background: url("../../public/static/images/nika-akin-TInBQ3Jlp-w-unsplash.jpg"); // palms
+  // background: url("../../public/static/images/quino-al-4SNUcHPiC8c-unsplash.jpg"); // phone
+  padding: 50px;
+  background-size: cover;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  @media (max-width: 800px) {
+    background: transparent;
+    padding: 0;
+  }
+}
+
+.intro-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  // height: 100vh;
+  height: calc(100vh - 100px);
+  // border: 6px solid var(--black);
+  background-color: rgba(255, 255, 255, 0.8);
+  @media (max-width: 800px) {
+    border: none;
+  }
+}
+
+.intro-circle {
+  // visibility: hidden;
+  margin: auto;
+  background-color: var(--navy-dark);
+  // border: 20px solid;
+  color: white;
+  width: 90vw;
+  height: 90vw;
+  max-width: var(--bp-md);
+  max-height: var(--bp-md);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 10px;
+  padding: 50px;
+  padding-top: 70px;
+  @media (max-width: 400px) {
+    padding: 20px;
+    padding-top: 40px;
+  }
+  @media (max-width: 350px) {
+    padding: 10px;
+    padding-top: 30px;
+  }
+  h1 {
+    // border: 1px solid red;
+    flex: 1 0 auto;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    span {
+      display: block;
+      margin-top: 20px;
+      font-size: 1.6em;
+    }
+    @media (max-width: 375px) {
+      font-size: 1.3em;
+    }
+  }
+  .intro-line {
+    // border: 1px solid red;
+
+    padding: 0;
+    flex: 1 0 auto;
+    height: 3px;
+    background-color: white;
+    min-width: 100px;
+    max-width: 100px;
+    display: block;
+    @media (max-width: 375px) {
+      height: 2px;
+      min-width: 60px;
+      max-width: 60px;
+      margin: 10px;
+    }
+  }
+  h2 {
+    // border: 1px solid red;
+    flex: 0 1 100%;
+    font-size: 1.6em;
+    span {
+      display: block;
+      margin-top: 20px;
+      @media (max-width: 375px) {
+        margin-top: 15px;
+      }
+    }
+    @media (max-width: 375px) {
+      font-size: 1.3em;
+    }
+  }
+}
