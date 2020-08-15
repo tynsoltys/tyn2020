@@ -9,9 +9,9 @@ import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
-import Header from "./header"
-import Intro from "./intro"
-import "./layout.css"
+import "../fonts/d39898aa-94a3-4115-bc71-65287da5a969.woff2"
+import "../fonts/fonts.scss"
+import "../styles/styles.scss"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -24,11 +24,7 @@ const Layout = ({ children }) => {
     }
   `)
 
-  return (
-    <>
-      <Intro></Intro>
-    </>
-  )
+  return <div className="container">{children}</div>
 }
 
 Layout.propTypes = {

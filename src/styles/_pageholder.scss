@@ -1,0 +1,39 @@
+.pageholder {
+  .construction {
+    margin-top: 50px;
+    color: var(--rust);
+  }
+}
+
+.about-page {
+}
+
+ol {
+  list-style: none;
+  counter-reset: my-awesome-counter;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+ol li {
+  counter-increment: my-awesome-counter;
+  display: flex;
+  flex-flow: row wrap;
+  font-size: 0.8rem;
+  margin-bottom: 0.5rem;
+  h3 {
+    margin-top: 10px;
+  }
+  p {
+    width: 100%;
+  }
+}
+ol li::before {
+  content: counter(my-awesome-counter);
+  font-weight: bold;
+  font-size: 5rem;
+  margin-right: 0.5rem;
+  font-family: serif;
+  line-height: 1;
+}

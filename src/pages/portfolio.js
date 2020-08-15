@@ -3,23 +3,22 @@ import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 import Content from "../components/content"
-import HomePageholder from "../components/pageholders/home-page"
-import Image from "../components/image"
+import PortfolioPageholder from "../components/pageholders/portfolio-page"
+import Intro from "../components/intro"
 import Header from "../components/header"
 import Leaf from "../components/design_el/leaf"
 import Squiggle from "../components/design_el/squiggle"
 import SEO from "../components/seo"
 
-const IndexPage = () => (
+const AboutPage = () => (
   <Layout>
-    <SEO title="Home" />
-
+    <SEO title="About" />
+    <Leaf></Leaf>
     <Header></Header>
     <Content>
-      <Leaf></Leaf>
-      <HomePageholder />
+      <PortfolioPageholder />
     </Content>
   </Layout>
 )
 
-export default IndexPage
+export default AboutPage

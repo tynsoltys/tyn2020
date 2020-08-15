@@ -1,0 +1,64 @@
+.line {
+  display: inline-block;
+  padding: 0;
+  margin: 10px 0px;
+  margin-top: 20px;
+  height: 3px;
+  background-color: var(--rust);
+}
+
+.squiggle {
+  // border: 1px solid green;
+  display: inline-block;
+  height: 20px;
+  overflow-x: hidden;
+  background-image: url(../components/design_el/squiggle.svg);
+  background-repeat: repeat-x;
+  svg {
+    width: 40px;
+    display: inline-block;
+  }
+}
+
+.squiggle-a {
+  animation: slideleft 200s infinite linear;
+}
+
+@keyframes slideleft {
+  from {
+    background-position: 0%;
+  }
+  to {
+    background-position: 9000%;
+  }
+}
+
+.leaf {
+  // border: 1px solid red;
+  filter: brightness(1.5) saturate(0.4);
+  position: absolute;
+  // transform: rotate(-90deg);
+  max-width: 800px;
+  width: 100%;
+
+  top: -300px;
+  right: -25%;
+  z-index: -6000;
+  img {
+    width: 100%;
+  }
+}
+
+.btn {
+  @include small-caps;
+  font-size: 0.7em;
+  font-weight: 400;
+  letter-spacing: 3px;
+  background-color: var(--rust);
+  padding: 15px 25px;
+  color: white;
+  box-shadow: var(--shadow);
+  &:hover {
+    opacity: 0.8;
+  }
+}
