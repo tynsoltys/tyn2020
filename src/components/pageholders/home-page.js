@@ -1,6 +1,7 @@
 import React, { Component } from "react"
 
 import Squiggle from "../design_el/squiggle"
+import Button from "../design_el/button"
 class HomePageholder extends Component {
   state = {}
   render() {
@@ -12,9 +13,9 @@ class HomePageholder extends Component {
           // This site is actively under construction
         </p>
         <h2 className="big-text">
-          I<span>&rsquo;</span>m Tyn, a multidisciplinary designer, web
+          I<span>&rsquo;</span>m Tyn, a multidisciplinary designer, front end
           developer, and super creative person based in Toronto
-          <span className="rusty" title="cool">
+          <span className="period rusty" title="cool">
             .
           </span>
         </h2>

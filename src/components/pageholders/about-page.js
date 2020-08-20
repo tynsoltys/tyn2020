@@ -13,25 +13,29 @@ class AboutPageholder extends Component {
           // This site is still under construction.
         </p> */}
         <p className="small-caps">
-          <span className="rust">//</span> I want to build a digital world that
-          feels like magic...
-          <br />
-          It helps us, makes us smile, and then gets out of the way.
+          <span className="rust">//</span> As a technology lover, I'm quick to adopt and participate in the latest and greatest, but just like everyone else, often feel overwhelmed, frustrated, and fatigued by it all...
         </p>
-        <h4>
+        <h2>
           I became a designer because I want to create things that I'd be
-          delighted to use: things that make my life easier, spark joy, and work
-          like they should.
-        </h4>
+          delighted to use and let me live my best life.
+        </h2>
+        <h3>These things may feel like:</h3>
+        <ul className="things-like">
+          <li>good disney magic: is kinda cute and saves your day</li>
+          <li>super chill synthwave playlists: very technology, much relax</li>
+          <li>someone holding a door open for you: feels kinda nice to be thought of</li>
+          <li>holding the door open for someone: feels kinda good being nice</li>
+          <li>cutting into a perfect avocado: no further explanation needed</li>
+        </ul>
 
-        <p class="small-para">
+        <p class="">
           As someone who's designed, built, and maintained{" "}
           <a href="#skills">many forms of technology</a> over the past 7 years,
-          I've witnessed how upstream frustrations can flow downstream and
-          impact the end user experience.
+          I've witnessed how upstream frustrations and ambiguity can flow downstream and
+          impact the end user experience. 
         </p>
 
-        <p class="small-para">
+        <p >
           Through the lenses of product, interaction, and workflow design, my
           dream is to make all user experiences in the digital world work{" "}
           <strong>
@@ -41,86 +45,6 @@ class AboutPageholder extends Component {
           </strong>
         </p>
 
-        <hr />
-        <h3>Philosophies</h3>
-        <ol className="philosophies">
-          <li>
-            <h3 className="philosophy-title">Functional, but fun.</h3>
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Recusandae eius minus reiciendis eum voluptatum blanditiis autem
-              quos molestiae quia. Fuga saepe, sequi commodi temporibus quis
-              explicabo unde ipsam quae nisi!
-            </p>
-          </li>
-          <li>
-            <h3 className="philosophy-title">All together now.</h3>
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Recusandae eius minus reiciendis eum voluptatum blanditiis autem
-              quos molestiae quia. Fuga saepe, sequi commodi temporibus quis
-              explicabo unde ipsam quae nisi!
-            </p>
-          </li>
-          <li>
-            <h3 className="philosophy-title">Mise en place.</h3>
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Recusandae eius minus reiciendis eum voluptatum blanditiis autem
-              quos molestiae quia. Fuga saepe, sequi commodi temporibus quis
-              explicabo unde ipsam quae nisi!
-            </p>
-          </li>
-          <li>
-            <h3 className="philosophy-title">Laterally (not literally).</h3>
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Recusandae eius minus reiciendis eum voluptatum blanditiis autem
-              quos molestiae quia. Fuga saepe, sequi commodi temporibus quis
-              explicabo unde ipsam quae nisi!
-            </p>
-          </li>
-          <li>
-            <h3 className="philosophy-title">
-              Why? Why? Why? Why? Why? Why? Why? Why?
-            </h3>
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Recusandae eius minus reiciendis eum voluptatum blanditiis autem
-              quos molestiae quia. Fuga saepe, sequi commodi temporibus quis
-              explicabo unde ipsam quae nisi!
-            </p>
-          </li>
-        </ol>
-
-        <hr />
-        <h3>Skillsets</h3>
-        <div className="skillset-container">
-          <div className="skillset">
-            <h4>DESIGN</h4>
-            <ul>
-              <li></li>
-            </ul>
-          </div>
-          <div className="skillset">
-            <h4>CODE</h4>
-            <ul>
-              <li>TOOLS</li>
-            </ul>
-          </div>
-          <div className="skillset">
-            <h4>Other</h4>
-            <ul>
-              <li></li>
-            </ul>
-          </div>
-        </div>
-        <p className="small-caps">...And so much more!!!</p>
-        <h4>
-          Fluent in Ukrainian, can survive comfortably and bountifully in the
-          wilderness while I apply first aid, music nerd, bike nerd, printmaker
-          & artist, amateur chef and novice sourdough head.
-        </h4>
       </div>
     )
   }

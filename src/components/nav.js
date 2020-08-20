@@ -9,14 +9,21 @@ class Nav extends Component {
       <nav>
         <Line length="20px"></Line>
         <ul>
-          <li>
-            <Link to="/portfolio/">Portfolio</Link>
+        <li>
+            <Link to="/about/">about</Link>
           </li>
           <li>
-            <Link to="/about/">About</Link>
+            <Link to="/philosophies/">philosophies</Link>
           </li>
           <li>
-            <Link to="#contact">Contact</Link>
+            <Link to="/skillsets/">skillsets</Link>
+          </li>
+          <li>
+          <Link to="/portfolio/">portfolio</Link>
+          </li>
+
+          <li>
+            <Link to="/contact/">contact</Link>
           </li>
         </ul>
         <Line length="20px"></Line>
