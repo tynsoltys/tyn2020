@@ -5,6 +5,9 @@
   margin-top: 20px;
   height: 3px;
   background-color: var(--rust);
+  @media (max-width: 768px) {
+    margin-top: 10px;
+  }
 }
 
 .squiggle {
@@ -34,19 +37,23 @@
 }
 
 .leaf {
-  // border: 1px solid red;
+  // border: 1px solid red;h
   filter: brightness(1.5) saturate(0.4);
   position: absolute;
   // transform: rotate(-90deg);
-  max-width: 800px;
-  width: 100%;
+  max-width: 1000px;
+  width: 180%;
 
-  top: -300px;
-  right: -25%;
+  top: -350px;
+  right: -60%;
   z-index: -6000;
   img {
     width: 100%;
   }
+}
+
+.desatch {
+  filter: brightness(0.8) saturate(0.4);
 }
 
 .btn {
@@ -60,5 +67,66 @@
   box-shadow: var(--shadow);
   &:hover {
     opacity: 0.8;
+  }
+}
+
+.highlight-box {
+  background-color: var(--yellow);
+  padding: 60px;
+  position: relative;
+  @media (max-width: 768px) {
+    padding:30px;
+    padding-left: 40px;
+  }
+  &.highlight-right {
+    padding-right: 60px;
+    &:before {
+      content:"";
+      display: block;
+      height: 70px;
+      width: 10px;
+      background-color: var(--silver);
+      transform: skew(30deg);
+      position: absolute;
+      top: -30px;
+      right: 80px;
+    }
+    &:after {
+      content:"";
+      display: block;
+      height: 70px;
+      width: 10px;
+      background-color: var(--silver);
+      transform: skew(30deg);
+      position: absolute;
+      top: -30px;
+      right: 50px;
+    }
+  }
+  hr {
+    height: 2px;
+    background-color: var(--navy-dark);
+    margin-top: 20px;
+  }
+  // box-shadow: var(--shadow);
+}
+
+.rusty-rail {
+  border-left: 5px solid var(--rust);
+  padding: 15px;
+  padding-left: 30px;
+}
+
+
+.quickies {
+  &:hover {
+    .fun-r {
+      display: inline-block;
+      transform: scaleX(-1) skew(19deg);
+    }
+  }
+  ul {
+    display: flex;
+    
   }
 }

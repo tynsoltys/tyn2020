@@ -5,7 +5,7 @@
  * See: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-import React from "react"
+import React, { useState } from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
@@ -14,6 +14,9 @@ import "../fonts/fonts.scss"
 import "../styles/styles.scss"
 
 const Layout = ({ children }) => {
+  const NavContext = React.createContext(false);
+  const [ navOpen, setNavOpen ] = useState(false);
+  const [ scrollPosition, setScrollPosition] = useState(0);
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -24,7 +27,14 @@ const Layout = ({ children }) => {
     }
   `)
 
-  return <div className="container">{children}</div>
+  return (
+  
+    <NavContext.Provider>
+      <div className="container">{children}</div>
+    </NavContext.Provider>
+  
+  
+  )
 }
 
 Layout.propTypes = {

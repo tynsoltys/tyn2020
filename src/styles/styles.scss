@@ -1,3 +1,8 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 @import "layout";
 @import "vars";
 @import "typography";
@@ -8,4 +13,6 @@
 @import "header";
 @import "nav";
 @import "pageholder";
+@import "portfolio";
 @import "contact";
+

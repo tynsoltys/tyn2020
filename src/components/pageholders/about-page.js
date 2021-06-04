@@ -9,33 +9,16 @@ class AboutPageholder extends Component {
       <div className="pageholder about-page">
         <h1>About Me.</h1>
         <Squiggle length="200px"></Squiggle>
-        {/* <p className="small-caps rust construction">
-          // This site is still under construction.
-        </p> */}
-        <p className="small-caps">
-          <span className="rust">//</span> As a technology lover, I'm quick to adopt and participate in the latest and greatest, but just like everyone else, often feel overwhelmed, frustrated, and fatigued by it all...
-        </p>
-        <h2>
-          I became a designer because I want to create things that I'd be
-          delighted to use and let me live my best life.
-        </h2>
-        <h3>These things may feel like:</h3>
-        <ul className="things-like">
-          <li>good disney magic: is kinda cute and saves your day</li>
-          <li>super chill synthwave playlists: very technology, much relax</li>
-          <li>someone holding a door open for you: feels kinda nice to be thought of</li>
-          <li>holding the door open for someone: feels kinda good being nice</li>
-          <li>cutting into a perfect avocado: no further explanation needed</li>
-        </ul>
-
-        <p class="">
-          As someone who's designed, built, and maintained{" "}
-          <a href="#skills">many forms of technology</a> over the past 7 years,
-          I've witnessed how upstream frustrations and ambiguity can flow downstream and
+        <p className="rusty-rail">
+          As someone who's designed, built, and maintained many different things over her career as a developer, I've witnessed how upstream frustrations and ambiguity can flow downstream and
           impact the end user experience. 
         </p>
 
-        <p >
+        <h2>
+          I became a designer because I want to create things that I'd be
+          delighted to use, are a joy to build, and ultimately allow <em>all</em> folks to live their best lives.
+        </h2>
+        <p className="highlight-box highlight-right">
           Through the lenses of product, interaction, and workflow design, my
           dream is to make all user experiences in the digital world work{" "}
           <strong>
@@ -43,8 +26,17 @@ class AboutPageholder extends Component {
             <em>all </em> stakeholders: developers, content producers, and
             administrators too.
           </strong>
+          <hr/>
+          <span className="small-caps"> CHECK OUT MY PHILOSOPHIES</span>
         </p>
-
+        {/* <h3>Conceptually, I want things I make to feel like:</h3>
+        <ul className="things-like">
+          <li>good disney magic: is kinda cute and saves your day</li>
+          <li>super chill synthwave playlists: very technology, much relax</li>
+          <li>someone holding a door open for you: feels kinda nice to be thought of</li>
+          <li>holding the door open for someone: feels kinda good being nice</li>
+          <li>cutting into a perfect avocado: no further explanation needed</li>
+        </ul> */}
       </div>
     )
   }

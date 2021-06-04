@@ -10,34 +10,35 @@
 
 ol {
   list-style: none;
-  counter-reset: my-awesome-counter;
+  counter-reset: cool-counter;
   display: flex;
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
 }
 ol li {
-  counter-increment: my-awesome-counter;
+  counter-increment: cool-counter;
   display: flex;
   flex-flow: row wrap;
   align-items: flex-end;
   border-bottom: 1px solid silver ;
-  margin-bottom: 1rem;
-  padding-bottom: 1rem;
+  margin-bottom: 3rem;
+  padding-bottom: 40px;
   h3 {
     // font-family: var(--sans);
     margin-top: 20px;
     font-size: 2.3em;
-    margin-bottom: 12px;
+    margin-bottom: 28px;
 
       color: var(--navy-dark);
   }
   p {
-    width: 100%;
+    width: 60%;
+    margin-top: 20px;
   }
 }
 ol li::before {
-  content: counter(my-awesome-counter);
+  content: counter(cool-counter);
   font-weight: regular;
   width: 50px;
   // display: flex;
@@ -52,4 +53,123 @@ ol li::before {
   text-align: center;
   border-radius: 50%;
   color: white;
+}
+
+.home-page {
+  ol li::before {
+    background-color: var(--teal);
+    margin-left: -83px;
+  }
+  li {
+    border-bottom: none;
+  }
+}
+
+.philosophies-page {
+  ol li {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    h3 {
+      // bordeR:1px solid green;
+      flex: 1 0 calc(100% - 100px);
+    }
+    p{
+      width: 50%;
+      padding: 10px;
+      order:10;
+        @media (max-width: 768px) {
+          width: 100%;
+          padding: 0;
+        }
+      }
+    
+      img {
+        width: 50%;
+        padding: 10px 30px 10px 65px;
+        @media (max-width: 768px) {
+          width: 100%;
+          padding: 0px;
+        }
+
+      }
+      @media (min-width: 768px) {
+        &:nth-child(odd) {
+          // border:1px solid red;
+          img {
+            order:5;
+          }
+          p {
+            order:10;
+          }
+          
+        }
+      }
+      
+    }
+
+}
+
+.competencies {
+  list-style-type: none;
+    margin-left: 0;
+    padding-left: 0;
+    li {
+      margin: 60px;
+      margin-bottom: 120px;
+    }
+  }
+
+
+.skillset-container {
+  display: flex;
+  flex-flow: row wrap;
+  h4 {
+    background-color: var(--silver);
+    padding: 10px;
+    display: inline-block;
+  }
+  .skillset ul {
+    margin-right: 60px;
+    list-style-type:none;
+    padding-left: 0;
+    margin-left: 0;
+    li {
+      // background-color: var(--yellow);
+      // bordeR:1px solid red;
+
+
+      p {
+        text-transform: none;
+        display: block;
+        font-style: bolder;
+        font-size: 01em;
+        padding-left: 20px;
+        &:before {
+          content:'';
+
+        }
+        span {
+          display: block;
+          font-size: 0.8em;
+          text-transform: uppercase;
+          letter-spacing: 1px;
+          font-style: italic;
+          line-height: 1em;
+          margin-top: 5px;
+          margin-left: 20px;
+        }
+      }
+    }
+  }
+}
+
+.higher-skills {
+  margin-left: 0;
+  text-transform: uppercase;
+  padding-left: 0;
+  li {
+
+  }
 }

@@ -1,9 +1,10 @@
 import React, { Component } from "react"
+import leaf from "../../images/og_leaf4.jpg"
 
 const Leaf = props => {
   return (
     <div className="leaf" style={{ width: props.length }}>
-      <img src="../images/og_leaf4.jpg" alt="" />
+      <img src={leaf} alt="" />
     </div>
   )
 }

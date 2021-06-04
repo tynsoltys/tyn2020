@@ -10,7 +10,7 @@ const Content = props => {
     <div className="content-container">
       {props.children}
 
-      <p className="small-caps">DESIGNED AND BUILT BY TYN IN 2020</p>
+      {/* <p className="small-caps">DESIGNED AND BUILT BY TYN IN 2021</p> */}
     </div>
   )
 }
