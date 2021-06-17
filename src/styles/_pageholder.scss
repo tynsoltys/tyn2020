@@ -59,9 +59,17 @@ ol li::before {
   ol li::before {
     background-color: var(--teal);
     margin-left: -83px;
+    @media (max-width: 768px) {
+      margin-left: 0;
+    }
   }
   li {
     border-bottom: none;
+    @media (max-width: 768px) {
+      p:first-child {
+        // margin-left: 70px;
+      }
+    }
   }
 }
 

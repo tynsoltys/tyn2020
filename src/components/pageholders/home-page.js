@@ -43,15 +43,15 @@ const HomePageholder = () => {
           </span>
         </h2>
         <p className="highlight-box highlight-right lg:ml-12 mt-12 relative z-40 shadow-xl">
-          <span className="inline-block mr-10">
-            <p className="font-bold text-2xl">In real life, I flex as a product designer and consultant, with a technically-informed "T-shape."</p>
+          <span className="inline-block lg:mr-10">
+            <p className="font-bold text-2xl mr-10">In real life, I flex as a product designer and consultant, with a technically-informed "T-shape."</p>
             <p>
-              Evolving out of front-end development, and dipping back into my business school background, my passion for puzzles, patterns, and making technology suck less has consolidated around delivering delightful, effective, and engaging user experiences. 
+              Evolving out of front-end development, my passion for puzzles, patterns, and making technology suck less has consolidated around delivering delightful, effective, and engaging user experiences. 
             </p>
 
             <hr/>
             <p class="text-lg font-bold">
-              I'm looking for a permanent home amongst fellow 👽🦄s.
+              Let's make good things better together 🙌
             </p>
           </span>
 
@@ -60,7 +60,7 @@ const HomePageholder = () => {
         
       </section>
 
-      <section id="projects" className="pb-48 pt-48">
+      <section id="projects" className="pb-48 pt-12 lg:pt-48">
           <img src={ leafie } alt="monstera leaf" className="hidden lg:block desatch -mt-72 -left-3/4 pr-32 absolute z-20 transform -rotate-12" />
           <h3 className="mt-0 text-7xl tracking-wide font-serif font-semibold inline-block  text-navy">Recent Projects</h3>
         <div className="relative pl-12 -ml-1">
@@ -70,18 +70,18 @@ const HomePageholder = () => {
           <p class="font-semibold italic text-3xl">
             Here's a quick sampling of design-driven projects I've worked on recently.
           </p>
-          <p className="text-rust text-xl font-semibold">I'm currently assembling corresponding case studies, but do <a href="#contact" className="underline text-rust">reach out</a> for details, artifacts, or a chat in the meantime.</p>
-          <p>I'm most proud of my ability to help clients sift through noise and rhetoric to gain clarity and alignment around goals, and craft simple and maintainable solutions that actually work for them.</p>
+          <p className="text-rust text-xl font-semibold">Note: I'm currently assembling corresponding case studies, but do <a href="#contact" className="underline text-rust">reach out</a> for details, artifacts, or a chat in the meantime.</p>
+          {/* <p>I'm most proud of my ability to help clients sift through noise and rhetoric to gain clarity and alignment around goals, and craft simple and maintainable solutions that actually work for them.</p> */}
         </div>
       
 
 
-        <div className="border-silver border-l-8 pl-12 ml-2 mt-24">
+        <div className="lg:border-silver lg:border-l-8 pl-0 lg:pl-12 lg:ml-2 mt-24">
           {/* <h3 className="mt-0 text-7xl tracking-wide font-sans font-semibold bg-navy p-4 pl-10 inline-block px-8 pb-6 text-white">recent projects</h3> */}
 
-          <ol>
+          <ol className="lg:pl-4 lg:pl-0">
           <li>
-              <p className="w-full ml-4 font-serif uppercase tracking-wide text-3xl mt-0 pt-0">Big Picture Trading, Inc.</p>
+              <p className="inline-block lg:block lg:w-full lg:ml-4 font-serif uppercase tracking-wide text-3xl lg:mt-0 lg:pt-0">Big Picture Trading, Inc.</p>
               <h3 className="text-4xl lg:text-5xl w-full font-sans font-bold ">Exploring <em className="inline-block -ml-2"> Options</em> </h3>
               <h4 className="uppercase tracking-wider font-normal text-xl">GETTING <em>In the money</em> with research and Experimentation </h4>
               <p className="w-full">
@@ -224,24 +224,6 @@ const HomePageholder = () => {
             </ul>
           </div>
 
-
-      {/* <p className="highlight-box highlight-right ml-12 mt-12 mb-24">
-          <span className="inline-block mr-10">
-            <p className="font-bold text-2xl">I find patterns and create systems around them.</p>
-            <p>
-              Whether its designing for reusability, dialling in workflows, or plotting out information architecture, my experience in both technical and design worlds primes me to deliver not only great user experiences, but behind-the-scenes content and developer experiences as well. 
-              </p>
-            <hr/>
-            <span className="font-semibold text-lg">
-            I believe continuous improvement in upstream process & communication translates to better organizational agility and ultimately, better experiences for everyone.
-            </span>
-          </span>
-
-        </p> */}
-        {/* <div className="flex justify-center mt-24">
-          <a href="https://codepen.io/tynsoltys/full/XWbWoxX"><div className="item-img" ><img src={morphy} alt="A morphing wireframes loading page concept made with Sketch and GreensockJS"/>  </div></a>
-        </div> */}
-
       </section>
       <div className="sharpie-container h-32 lg:h-64 flex justify-center items-center overflow-hidden" >
             <img src={sharpie} title="gotta drop some big sharpie energy" alt="image of brand name fine tip permanent marker" />
@@ -250,23 +232,13 @@ const HomePageholder = () => {
       <div className="pageholder about-page lg:py-12" id="about">
       <h2 className="font-serif text-5xl text-navy">About Me</h2>
           <Squiggle length="200px"></Squiggle>
-          {/* <div>
-            <p className="font-sans mt-12 text-5xl font-semibold text-navy inline-block"><em>Hi I'm Tyn</em>
-            
-            <div className="inline-block mx-4 italic bg-rust p-2 px-3 mb-4">
-              
-              <p className="uppercase text-sm text-white m-0 p-0">pronounced: "tin"</p>
-              <p className="uppercase text-sm text-white m-0 p-0">pronouns: she/her</p>
-            </div>is short for Chrystyna but no one calls me that.</p>
-
-          </div> */}
 
 
         <p className="text-2xl font-semibold mt-8">Adaptable, teachable, curious, and stoked to get in the weeds, I think everything is interesting and can be made better with some creative inquiry and courage.</p>
 
-        <p>I really enjoy working in space-between design, technology, and business, and am especially suited to tackling abstract, wicked-problem, systemic-level challenges. Topics that light me up include design systems, accessibility, information architecture, and rethinking education, the workplace, and refactoring the role of technology in our lives for better mental health. <strong><em>I want to help build a better, chiller, friendlier, less cortisol-spiking world for all of us, one bit at a time.</em></strong> </p>
+        <p>I really enjoy working in the space-between design, technology, and business. I am especially interested in projects centred around education, design systems, modern work, and refactoring the role of technology in our lives for better mental health. <strong><em>I want to help build a better, chiller, friendlier, less cortisol-spiking world for all of us, one bit at a time.</em></strong> </p>
 
-        {/* <p>When I'm not working, I'm probably out <a href="https://www.strava.com/athletes/14651807" target="_blank" className="text-rust underline">riding my bike</a>, <a href="https://open.spotify.com/user/22e5vcxhfsk7h663v4kbceyda?si=8af9e0f63dbe47eb" target="_blank" className="text-rust underline">listening to music</a>, <a href="https://www.instagram.com/kooknhakn/" target="_blank" className="text-rust underline">doodling</a> or <a href="https://www.instagram.com/midnightborshchclub/" target="_blank" className="text-rust underline">sprinkling things with dill</a>. I might also be out in the wilderness teaching scouts how to craft furniture from sticks and rope, swinging in a hammock contemplating if the truth is out there, or picking up cool rocks (and trash: respecting Mother Naitch is important). Rarely, you will find me selling hand-printed greeting cards at holiday markets.</p> */}
+        <p>When I'm not working, I'm probably out <a href="https://www.strava.com/athletes/14651807" target="_blank" className="text-rust underline">riding my bike</a>, <a href="https://open.spotify.com/user/22e5vcxhfsk7h663v4kbceyda?si=8af9e0f63dbe47eb" target="_blank" className="text-rust underline">listening to music</a>, <a href="https://www.instagram.com/kooknhakn/" target="_blank" className="text-rust underline">doodling</a> or <a href="https://www.instagram.com/midnightborshchclub/" target="_blank" className="text-rust underline">sprinkling things with dill</a>. </p>
         {/* <h3 className="mt-12">Conceptually, I aspire to create things that feel like:</h3>
           <ul className="things-like rusty-rail">
             <li><span className="font-semibold text-lg">good disney magic:</span> is kinda cute and saves your day</li>
@@ -298,8 +270,6 @@ const HomePageholder = () => {
       <div className="pageholder contact-page">
         <div className="mt-12">
           
-          {/* <a href="mailto:tynsoltys@gmail.com" class="inline-block uppercase p-4 px-8 pr-9 hover:mb-2 bg-rust items-center text-white font-semibold tracking-wide shadow-xl text-6xl italic ml-16">Email Me</a> */}
-
           <p className="text-2xl font-semibold text-center">For the forseeable future, I am not taking on any new freelance projects, though can offer my 🧠 for picking on occasion.</p>
 
           <p className="text-center">Thank you for coming by, and wish you a happy, healthy, and inspiring day.</p>

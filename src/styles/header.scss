@@ -46,9 +46,8 @@ header {
     left: 10px;
     box-shadow: var(--shadow);
     height: 40px;
-    width: 100%;
+    width: calc(100% - 10px);
     display: flex;
-    // border:1px solid red;
     justify-content: space-between;
     padding: 0px 10px;
     padding-right: 25px;
