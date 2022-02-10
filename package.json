@@ -23,7 +23,7 @@
     "gatsby-source-wordpress": "^5.3.1",
     "gatsby-transformer-sharp": "^2.5.13",
     "jelly.js": "0.0.8",
-    "node-sass": "^4.14.1",
+    "node-sass": "^7.0.0",
     "postcss": "^8.2.12",
     "prop-types": "^15.7.2",
     "react": "^16.13.1",
